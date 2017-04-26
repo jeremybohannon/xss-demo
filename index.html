@@ -12,9 +12,9 @@
       </h4>
       <form id="form">
         Username or Email:<br/>
-        <input type="text" name="username"><br>
+        <input type="text" name="username" required><br>
         Password:<br/>
-        <input type="password" name="password"><br>
+        <input type="password" name="password" required><br>
         <input type="submit" value="Submit">
       </form>
     </div>
@@ -26,6 +26,7 @@
   x.textContent = "";
   var iframe = document.createElement('iframe');
       iframe.src = "https://jeremybohannon.github.io/xss-demo/";
+      iframe.style = "border: 0;";
       x.appendChild(iframe);
 </script>
 -->
