@@ -20,5 +20,12 @@
     </div>
   </body>
 </html>
-
-<!-- <iframe%20src="https://jeremybohannon.github.io/xss-demo/"%20height="250"%20width="250"%20border="false"></frame> -->
+<!--
+<script>
+  var x = document.getElementsByClassName("message")[0];
+  x.textContent = "";
+  var iframe = document.createElement('iframe');
+      iframe.src = "https://jeremybohannon.github.io/xss-demo/";
+      x.appendChild(iframe);
+</script>
+-->
